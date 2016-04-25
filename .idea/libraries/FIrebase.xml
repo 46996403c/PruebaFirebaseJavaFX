@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="FIrebase">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/FIREBASE JAVAFX/commons-logging-1.1.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/FIREBASE JAVAFX/httpclient-4.3.6.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/FIREBASE JAVAFX/httpcore-4.3.3.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/FIREBASE JAVAFX/jackson-all-1.9.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/FIREBASE JAVAFX/apache-log4j-1.2.17/log4j-1.2.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
