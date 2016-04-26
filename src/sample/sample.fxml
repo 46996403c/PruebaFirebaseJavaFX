@@ -18,19 +18,49 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <AnchorPane prefHeight="426.0" prefWidth="483.0">
-         <children>
-            <TextField fx:id="nombreTF" layoutX="242.0" layoutY="32.0" />
-            <TextArea fx:id="descripcionTA" layoutX="240.0" layoutY="69.0" prefHeight="82.0" prefWidth="200.0" />
-            <Text layoutX="131.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
-            <Text layoutX="105.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPCION" />
-            <Button fx:id="subirBT" layoutX="118.0" layoutY="110.0" mnemonicParsing="false" onAction="#subir" text="SUBIR" />
-            <TextField fx:id="mostrarNombreTF" layoutX="240.0" layoutY="188.0" />
-            <TextArea fx:id="mostrarDescTA" layoutX="240.0" layoutY="222.0" prefHeight="158.0" prefWidth="200.0" />
-            <Text layoutX="131.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
-            <Text layoutX="105.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPCION" />
-            <Button fx:id="mostrarBT" layoutX="107.0" layoutY="301.0" mnemonicParsing="false" onAction="#mostrar" text="MOSTRAR" />
-         </children>
-      </AnchorPane>
+      <TabPane prefHeight="433.0" prefWidth="512.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Notas">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="nombreTF" layoutX="256.0" layoutY="25.0" />
+                        <TextArea fx:id="descripcionTA" layoutX="256.0" layoutY="62.0" prefHeight="82.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPCION" />
+                        <Button fx:id="subirBT" layoutX="95.0" layoutY="78.0" mnemonicParsing="false" onAction="#subir" text="SUBIR" />
+                        <TextField fx:id="mostrarNombreTF" layoutX="256.0" layoutY="190.0" />
+                        <TextArea fx:id="mostrarDescTA" layoutX="256.0" layoutY="220.0" prefHeight="158.0" prefWidth="200.0" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE" />
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPCION" />
+                        <Button fx:id="mostrarBT" layoutX="95.0" layoutY="249.0" mnemonicParsing="false" onAction="#mostrar" text="MOSTRAR" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="InfoGym">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="horarioLunesTF" layoutX="328.0" layoutY="123.0" promptText="Horario Lunes" />
+                        <TextField fx:id="horarioMartesTF" layoutX="328.0" layoutY="155.0" promptText="Horario Martes" />
+                        <TextField fx:id="horarioMiercolesTF" layoutX="328.0" layoutY="184.0" promptText="Horario Miercoles" />
+                        <TextField fx:id="horarioJuevesTF" layoutX="328.0" layoutY="212.0" promptText="Horario Jueves" />
+                        <TextField fx:id="horarioViernesTF" layoutX="328.0" layoutY="245.0" promptText="Horario Viernes" />
+                        <TextField fx:id="horarioSabadoTF" layoutX="328.0" layoutY="273.0" promptText="Horario Sabado" />
+                        <TextField fx:id="horarioDomingoTF" layoutX="328.0" layoutY="309.0" promptText="Horario Domingo" />
+                        <Button fx:id="subirHorariosBT" layoutX="186.0" layoutY="346.0" mnemonicParsing="false" onAction="#subirHorario" text="Subir Info" />
+                        <TextField fx:id="nombreGymTF" layoutX="37.0" layoutY="14.0" prefHeight="25.0" prefWidth="197.0" promptText="Nombre Gym" />
+                        <TextField fx:id="direccionGymTF" layoutX="37.0" layoutY="51.0" prefHeight="25.0" prefWidth="440.0" promptText="Direccion" />
+                        <TextField fx:id="telefonoGymTF" layoutX="251.0" layoutY="14.0" prefHeight="25.0" prefWidth="227.0" promptText="Telefono Gym" />
+                        <TextField fx:id="correoElectronicoGymTF" layoutX="37.0" layoutY="89.0" prefHeight="25.0" prefWidth="440.0" promptText="Correo electronico" />
+                        <TextField fx:id="longitudGymTF" layoutX="54.0" layoutY="190.0" promptText="Longitud" />
+                        <TextField fx:id="latitudGymTF" layoutX="54.0" layoutY="226.0" promptText="Latitud" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </GridPane>
